@@ -13,7 +13,7 @@
     color: #FD6E0A;
 }
 .header{
-    position: absolute;
+    
     background-color:#FFF8F3;
     background-image: url('images/header_bg.png'),url(images/developer.png);
     background-repeat: no-repeat;
@@ -65,5 +65,19 @@ nav li{
    /* ..........about me ..........  */
 
    .about{
+    background: #FFF8F3;
+    border-radius: 10px;    
+    margin: 130px 230px;
+    padding: 130px 150px;
+   }
+   .section-title{
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   .section-description{
+    margin-bottom: 30px;
+    color: #757575;
+    font-size: 18px;
+
     
    }
