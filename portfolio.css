@@ -93,7 +93,7 @@ nav li{
     text-align: center;
      margin-bottom: 30px;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
    }
 
    .section-description{
@@ -121,9 +121,9 @@ nav li{
     color: #474747;
    }
    /* .......what i do styles */
-   .what-i-do{
+   /* .what-i-do{
     margin: 130px 230px;
-   }
+   } */
 
    .skills-container{
     display: flex;
@@ -139,7 +139,7 @@ nav li{
 
    .skill-title{
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 20px;
     margin-top:30px ;
    }
@@ -147,43 +147,34 @@ nav li{
    .skill-description{
     font-weight: 400;
     font-size: 12px;
+    
    }
    /* ....... resume styles.......  */
-   .resume{
-    margin: 0px 230px;
-   }
-
    .resume-content{
-    gap: 24px;
+    margin: 50px 50px;
     display: flex;
-   }
-
-   .resume .title{
-    margin-bottom: 10px;
-    color: #474747;
-    font-size: 18px;
+    gap: 24px;
+}
+.resume-item{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.resume .title{
     font-weight: 700;
-
-   }
-
-   .resume .sub-title{
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+.resume .sub-title{
     color: #757575;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 20px;
-   }
-
-   .resume.description{
+}
+.resume .description{
     color: #757575;
-   }
+}
 
-   .resume-items{
-    margin-bottom: 30px;
-   }
-
-   .resume-title{
-    margin-bottom: 30px;
-   }
 
    .resume-button{
     margin-bottom: 100px;
@@ -219,4 +210,65 @@ nav li{
     }
     .fa-download{
         padding-right: 10px;
+    }
+    /*  responsive portfolio */
+
+    @media screen and (max-width:576px) {
+        nav,
+        .banner, 
+        .skills-container,
+         .about-info-container{
+            gap: 20px;
+            flex-direction:column;
+            padding:10px 20px;
+            
+        }
+
+        nav ul{
+            flex-direction: column;
+            gap: 20px;
+            align-items:start ;
+        }
+        .header{
+            background-image: none;
+        }
+        .banner img{
+            width: 300px;
+        }
+        
+        .contact{
+            flex-direction: column;
+        }
+        .about,.contact{
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .resume-content{
+            flex-direction: column;
+            padding: 10px 20px;
+        }
+        .contact input[type=text],textarea{
+            padding: 0 0 0 5px;
+        }
+    }
+    @media screen and (min-width:577px) and (max-width:992px) {
+
+        .about,.contact{
+            gap: 10px;
+            padding: 100px;
+            
+        }
+        .contact{
+            flex-direction: column;
+        }
+        .contact input[type=text],textarea{
+            padding: 0 0 0 5px;
+        }
+      
+
+        
+    }
+    .hide{
+        display: none;
     }
